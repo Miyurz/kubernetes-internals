@@ -1,2 +1,2 @@
 # kubernetes-internals
-Important information 
+Documentation on k8s
