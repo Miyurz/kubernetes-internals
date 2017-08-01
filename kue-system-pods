@@ -1,0 +1,11 @@
+System pods in k8s 
+
+1. kube-apiserver exposes the Kubernetes API; it is the front-end for the Kubernetes control plane. It is designed to scale horizontally
+
+2. etc-server is used as Kubernetes’ backing store. All cluster data is stored here. Proper administration of a Kubernetes cluster includes a backup plan for etcd’s data.
+
+3. kube-controller-manager is a binary that runs controllers, which are the background threads that handle routine tasks in the cluster. Logically, each controller is a separate process, but to reduce the number of moving pieces in the system, they are all compiled into a single binary and run in a single process.
+
+4. kube-proxy enables the Kubernetes service abstraction by maintaining network rules on the host and performing connection forwarding.
+
+5. kube-scheduler watches newly created pods that have no node assigned, and selects a node for them to run on.
